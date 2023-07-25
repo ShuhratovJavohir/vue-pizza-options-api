@@ -1,0 +1,14 @@
+@import "../variables";
+
+.cart {
+  &-cont{
+    max-width: 821px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.content__title{
+  display: flex;
+  gap: 17px;
+}
