@@ -56,7 +56,7 @@ export default createStore({
   actions: {
     async getPizzas(context) {
       let response = await fetch(
-        "https://64b7c1b821b9aa6eb078f74d.mockapi.io/items"
+        "https://64de99a3825d19d9bfb2bcac.mockapi.io/vue-pizza"
       );
       let result = await response.json();
       context.commit("getPizzas", result);

@@ -50,11 +50,15 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   props: {
     pizza: {
       typeof: Array,
     },
+  },
+  methods: {
+    ...mapMutations(["addCart"]),
   },
 };
 </script>

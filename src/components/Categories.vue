@@ -2,8 +2,8 @@
   <div class="categories">
     <ul>
       <li
-        v-for="(categorie, index) in categoriesArray"
-        :class="{ active: categorie.isActive }"
+       
+        :class="{ active: categorie.isActive }" v-for="(categorie, index) in categoriesArray"
         :key="index"
         @click="addCategories(categorie, categorie)"
       >

@@ -108,15 +108,15 @@ export default {
     };
   },
   methods: {
-    cartActive(){
-      if(this.getCartInfo == 0){
-        console.log('false');
-        this.activeCart = false
-      } else{
-        console.log('true');
-        this.activeCart = true
-      }
-    }
+    // cartActive(){
+    //   if(this.getCartInfo == 0){
+    //     console.log('false');
+    //     this.activeCart = false
+    //   } else{
+    //     console.log('true');
+    //     this.activeCart = true
+    //   }
+    // }
   },
   computed: {
     ...mapState(["cart"]),
@@ -132,11 +132,11 @@ export default {
     getLength() {
       return this.cart.length
     },
-    getPrice(){
-      return this.cart.forEach(el => {
-        console.log(el.price += el.price);
-      })
-    }
+    // getPrice(){
+    //   return this.cart.forEach(el => {
+    //     console.log(el.price += el.price);
+    //   })
+    // }
   },
   created() {
     this.$store.state.cart
